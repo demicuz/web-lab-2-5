@@ -1,0 +1,44 @@
+@use "../utils/variables";
+
+.link-button {
+	padding: 20px;
+	background-color: red;
+}
+
+.button {
+	background-color: variables.$white;
+	border-radius: 2px;
+	display: inline-block;
+	cursor: pointer;
+
+	color: variables.$dark-grey;
+	font-weight: variables.$font-weight-normal;
+	font-size: 14px;
+	letter-spacing: 2px;
+	line-height: 48px; // a hack for uppercase text centering
+	padding: 0px 31px;
+	text-decoration: none;
+
+	min-width: 180px;
+	// min-height: 48px;
+	text-align: center;
+
+	&:hover {
+		background-color: variables.$selected-grey;
+	}
+
+	&:active {
+		position: relative;
+		top: 1px;
+	}
+}
+
+.banner-main__buttons-wrapper {
+	display: flex;
+	gap: 24px;
+
+	position: absolute;
+	bottom: 66px;
+	left: 50%;
+	transform: translateX(-50%);
+}

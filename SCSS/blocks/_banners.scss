@@ -1,0 +1,33 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.banner__img {
+	display: block; // just in case
+	width: 100%;
+
+	// uncomment for full height even when the width is small;
+	// height: 740px; // or other
+	// object-fit: cover;
+}
+
+.banner-main {
+	// @include mixins.wrapper;
+	position: relative; // to position the text inside
+}
+
+.banner-main__text {
+	width: 100%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h1 {
+		margin: 0;
+		padding-bottom: 11px;
+	}
+}

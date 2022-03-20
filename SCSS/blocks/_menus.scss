@@ -1,0 +1,50 @@
+@use "../utils/variables";
+// @use "../utils/mixins";
+
+.slider-menu__items {
+	display: flex;
+	justify-content: space-between;
+	// gap: 20px; // TODO
+	background-color: brown;
+}
+
+nav.slider-menu {
+	max-width: 540px;
+	margin: 0 auto;
+	padding-top: 20px;
+
+	input {
+		display: none;
+	}
+
+	label {
+		flex-grow: 1;
+		max-width: 123px;
+		// height: 24px;
+		padding: 10px;
+		background-color: orange;
+		display: block; // makes no effect, but anyway
+
+		&:hover {
+			cursor: pointer;
+			color: variables.$selected-grey; // TODO
+		}
+	}
+}
+
+.slider-menu__bar {
+	max-width: 123px;
+	height: 2px;
+	background: #000;
+}
+
+.slider {
+	// width: 100%;
+	max-width: 1236px; // TODO maybe make a wrapper?
+	margin: 0 auto;
+	height: 2px;
+	display: block;
+	background: variables.$bar-grey;
+	// margin-top: 10px;
+	// border-radius: 500px;
+}

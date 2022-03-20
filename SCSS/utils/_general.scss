@@ -1,0 +1,10 @@
+@use "../utils/mixins";
+
+body {
+	@include mixins.roboto-family;
+	@include mixins.wrapper;
+}
+
+.page-section {
+	padding-bottom: 120px;
+}

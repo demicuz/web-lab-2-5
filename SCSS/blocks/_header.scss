@@ -1,0 +1,56 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.header {
+	// @include mixins.wrapper;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: variables.$header-h;
+	background-color: variables.$white;
+}
+
+.header__links-left, .header__links-right {
+	display: flex;
+}
+
+.header__logo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.header__link-text {
+	line-height: variables.$header-h; // a hack for nice and big buttons
+	flex-shrink: 0;
+	padding: 0px variables.$link-padding;
+	font-size: 12px;
+	letter-spacing: 1.7px;
+	font-weight: variables.$font-weight-normal;
+	text-decoration: none;
+	color: variables.$dark-grey;
+}
+
+.header__link-icon {
+	line-height: variables.$header-h;
+	flex-shrink: 0;
+	padding: 0px variables.$icon-padding;
+
+	img {
+		width: 90%;
+		height: auto;
+		vertical-align: -9%;
+	}
+}
+
+.header__link-text:hover, .header__link-icon:hover {
+	background-color: variables.$selected-grey;
+	// opacity: 40%;
+	// transition: opacity 0.3s;
+}
+
+@media (max-width: 950px) {
+	.header__logo {
+		display: none;
+	}
+}
