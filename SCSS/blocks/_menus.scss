@@ -5,7 +5,6 @@
 	display: flex;
 	justify-content: space-between;
 	// gap: 20px; // TODO
-	background-color: brown;
 }
 
 nav.slider-menu {
@@ -22,29 +21,22 @@ nav.slider-menu {
 		max-width: 123px;
 		// height: 24px;
 		padding: 10px;
-		background-color: orange;
 		display: block; // makes no effect, but anyway
 
 		&:hover {
 			cursor: pointer;
-			color: variables.$selected-grey; // TODO
+			background-color: variables.$selected-grey;
 		}
 	}
 }
 
-.slider-menu__bar {
+.slider-menu__slider {
 	max-width: 123px;
 	height: 2px;
 	background: #000;
 }
 
-.slider {
-	// width: 100%;
-	max-width: 1236px; // TODO maybe make a wrapper?
-	margin: 0 auto;
-	height: 2px;
-	display: block;
-	background: variables.$bar-grey;
-	// margin-top: 10px;
-	// border-radius: 500px;
-}
+// Doesn't work, as input and slider are not on the same level :(
+// .slider-menu__items #shoes:checked ~ .slider-menu__slider {margin: 0}
+// .slider-menu__items #apparel:checked ~ .slider-menu__slider {margin: 0 auto}
+// .slider-menu__items #basics:checked ~ .slider-menu__slider {margin: 0 0 0 auto}

@@ -41,8 +41,75 @@
   text-align: center;
 }
 
+.text-card-title {
+  font-size: 22px;
+  color: #212A2F;
+  font-style: normal;
+  line-height: 29px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.text-card-description-small {
+  font-size: 14px;
+  color: #212A2F;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+
 .align-center {
   text-align: center;
+}
+
+.pt-5 {
+  padding-top: 5px;
+}
+
+.pb-4 {
+  padding-bottom: 4px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pb-12 {
+  padding-bottom: 12px;
+}
+
+.pb-34 {
+  padding-bottom: 34px;
+}
+
+.px-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.py-18 {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.min-width-180 {
+  min-width: 180px;
+}
+
+.bar-2px {
+  width: 100%;
+  margin: 0 auto;
+  height: 2px;
+  display: block;
+  background: #D3D4D5;
+}
+
+.bar-1px {
+  width: 100%;
+  margin: 0 auto;
+  height: 1px;
+  display: block;
+  background: #D3D4D5;
 }
 
 body {
@@ -54,6 +121,12 @@ body {
 
 .page-section {
   padding-bottom: 120px;
+}
+
+.section-wrapper {
+  padding: 0 24px;
+  max-width: 1284px;
+  margin: 0 auto;
 }
 
 .header {
@@ -146,7 +219,6 @@ body {
   line-height: 48px;
   padding: 0px 31px;
   text-decoration: none;
-  min-width: 180px;
   text-align: center;
 }
 .button:hover {
@@ -169,7 +241,6 @@ body {
 .slider-menu__items {
   display: flex;
   justify-content: space-between;
-  background-color: brown;
 }
 
 nav.slider-menu {
@@ -184,26 +255,48 @@ nav.slider-menu label {
   flex-grow: 1;
   max-width: 123px;
   padding: 10px;
-  background-color: orange;
   display: block;
 }
 nav.slider-menu label:hover {
   cursor: pointer;
-  color: #F2F2F2;
+  background-color: #F2F2F2;
 }
 
-.slider-menu__bar {
+.slider-menu__slider {
   max-width: 123px;
   height: 2px;
   background: #000;
 }
 
-.slider {
-  max-width: 1236px;
-  margin: 0 auto;
-  height: 2px;
-  display: block;
-  background: #D3D4D5;
+.cards-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__image {
+  width: 396px;
+  height: 396px;
+}
+
+.card__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__icon_and_text {
+  display: flex;
+}
+.card__icon_and_text .card__icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

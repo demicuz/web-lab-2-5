@@ -33,6 +33,20 @@
 	text-align: center;
 }
 
-.align-center {
-	text-align: center;
+.text-card-title {
+	font-size: 22px;
+	color: variables.$dark-grey;
+	font-style: normal;
+	line-height: 29px;
+	letter-spacing: 0.5px;
+
+	text-decoration: none;
+}
+
+.text-card-description-small {
+	font-size: 14px;
+	color: variables.$dark-grey;
+	font-style: normal;
+	line-height: 20px;
+	letter-spacing: 0.3px;
 }
