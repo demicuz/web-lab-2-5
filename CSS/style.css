@@ -202,11 +202,6 @@ body {
   padding-bottom: 11px;
 }
 
-.link-button {
-  padding: 20px;
-  background-color: red;
-}
-
 .button {
   background-color: #FFFFFF;
   border-radius: 2px;
@@ -278,11 +273,28 @@ nav.slider-menu label:hover {
 .card {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .card__image {
   width: 396px;
   height: 396px;
+}
+
+.card__buttons_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 276px;
+  position: absolute;
+  top: 144px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0%;
+}
+
+.card__image:hover + .card__buttons_wrapper, .card__buttons_wrapper:hover {
+  opacity: 100%;
 }
 
 .card__description {
