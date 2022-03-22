@@ -16,11 +16,21 @@
 	letter-spacing: 0.5px;
 }
 
+.text-p {
+	font-size: 16px;
+	color: variables.$dark-grey;
+	font-weight: variables.$font-weight-normal;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+}
+
 .text-h2 {
 	font-size: 32px;
 	color: variables.$dark-grey;
 	font-weight: variables.$font-weight-normal;
-	line-height: 42px;
+	// TODO Figma can't decide on line-height lol
+	// line-height: 42px;
+	line-height: 41.92px;
 	letter-spacing: 0.5px;
 }
 

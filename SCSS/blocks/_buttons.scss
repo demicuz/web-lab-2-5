@@ -1,12 +1,10 @@
 @use "../utils/variables";
 
-.button {
-	background-color: variables.$white;
+.button, .button-dark {
 	border-radius: 2px;
 	display: inline-block;
 	cursor: pointer;
 
-	color: variables.$dark-grey;
 	font-weight: variables.$font-weight-normal;
 	font-size: 14px;
 	letter-spacing: 2px;
@@ -18,20 +16,38 @@
 	// min-height: 48px;
 	text-align: center;
 
-	&:hover {
-		background-color: variables.$selected-grey;
-	}
-
 	&:active {
 		position: relative;
 		top: 1px;
 	}
 }
 
-.banner-main__buttons-wrapper {
-	display: flex;
-	gap: 24px;
+.button {
+	background-color: variables.$white;
+	color: variables.$dark-grey;
 
+	&:hover {
+		background-color: variables.$selected-grey;
+	}
+}
+
+.button-dark {
+	background-color: variables.$dark-grey;
+	color: variables.$white;
+
+	&:hover {
+		opacity: 90%;
+		// background-color: variables.$selected-grey;
+	}
+}
+
+.buttons-wrapper {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+
+.banner-main__buttons-wrapper {
 	position: absolute;
 	bottom: 66px;
 	left: 50%;

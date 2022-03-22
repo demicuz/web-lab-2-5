@@ -24,11 +24,19 @@
   letter-spacing: 0.5px;
 }
 
+.text-p {
+  font-size: 16px;
+  color: #212A2F;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
 .text-h2 {
   font-size: 32px;
   color: #212A2F;
   font-weight: 400;
-  line-height: 42px;
+  line-height: 41.92px;
   letter-spacing: 0.5px;
 }
 
@@ -62,12 +70,28 @@
   text-align: center;
 }
 
+.margin-0-auto {
+  margin: 0 auto;
+}
+
 .pt-5 {
   padding-top: 5px;
 }
 
+.pt-17 {
+  padding-top: 17px;
+}
+
+.pr-78 {
+  padding-right: 78px;
+}
+
 .pb-4 {
   padding-bottom: 4px;
+}
+
+.pb-6 {
+  padding-bottom: 6px;
 }
 
 .pb-10 {
@@ -78,8 +102,24 @@
   padding-bottom: 12px;
 }
 
+.pb-18 {
+  padding-bottom: 18px;
+}
+
+.pb-24 {
+  padding-bottom: 24px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
 .pb-34 {
   padding-bottom: 34px;
+}
+
+.pl-18 {
+  padding-left: 18px;
 }
 
 .px-30 {
@@ -94,6 +134,22 @@
 
 .min-width-180 {
   min-width: 180px;
+}
+
+.min-width-384 {
+  min-width: 384px;
+}
+
+.max-width-655 {
+  max-width: 655px;
+}
+
+.max-width-664 {
+  max-width: 664px;
+}
+
+.width-200 {
+  width: 200px;
 }
 
 .bar-2px {
@@ -127,6 +183,10 @@ body {
   padding: 0 24px;
   max-width: 1284px;
   margin: 0 auto;
+}
+
+.section-scrollable-wrapper {
+  padding-left: 24px;
 }
 
 .header {
@@ -202,12 +262,14 @@ body {
   padding-bottom: 11px;
 }
 
-.button {
-  background-color: #FFFFFF;
+.banner-content {
+  padding-top: 48px;
+}
+
+.button, .button-dark {
   border-radius: 2px;
   display: inline-block;
   cursor: pointer;
-  color: #212A2F;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 2px;
@@ -216,17 +278,34 @@ body {
   text-decoration: none;
   text-align: center;
 }
-.button:hover {
-  background-color: #F2F2F2;
-}
-.button:active {
+.button:active, .button-dark:active {
   position: relative;
   top: 1px;
 }
 
-.banner-main__buttons-wrapper {
+.button {
+  background-color: #FFFFFF;
+  color: #212A2F;
+}
+.button:hover {
+  background-color: #F2F2F2;
+}
+
+.button-dark {
+  background-color: #212A2F;
+  color: #FFFFFF;
+}
+.button-dark:hover {
+  opacity: 90%;
+}
+
+.buttons-wrapper {
   display: flex;
+  justify-content: center;
   gap: 24px;
+}
+
+.banner-main__buttons-wrapper {
   position: absolute;
   bottom: 66px;
   left: 50%;
@@ -270,6 +349,14 @@ nav.slider-menu label:hover {
   flex-wrap: wrap;
 }
 
+.cards-scrollable-wrapper {
+  position: relative;
+  display: flex;
+  gap: 24px;
+  justify-content: flex-start;
+  overflow-x: hidden;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -309,6 +396,24 @@ nav.slider-menu label:hover {
   width: 30px;
   height: 30px;
   margin-right: 12px;
+}
+
+.button-next {
+  background: url("../img/button-next.svg");
+  width: 48px;
+  height: 48px;
+  border: none;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 174px;
+  right: 48px;
+}
+.button-next:hover {
+  cursor: pointer;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), url("../img/button-next.svg");
+}
+.button-next:active {
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
 }
 
 /*# sourceMappingURL=style.css.map */
