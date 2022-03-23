@@ -16,6 +16,8 @@
 	// min-height: 48px;
 	text-align: center;
 
+	flex-shrink: 0;
+
 	&:active {
 		position: relative;
 		top: 1px;
