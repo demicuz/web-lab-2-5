@@ -1,8 +1,6 @@
 @use "../utils/variables";
-@use "../utils/mixins";
 
 .header {
-	// @include mixins.wrapper;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

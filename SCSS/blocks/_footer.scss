@@ -1,5 +1,4 @@
 @use "../utils/variables";
-// @use "../utils/mixins";
 
 .footer {
 	background-color: variables.$dark-grey;
@@ -25,4 +24,8 @@
 	border: none;
 	border-bottom: 2px solid variables.$white;
 	padding-left: 10px;
+}
+
+.footer__links {
+	
 }

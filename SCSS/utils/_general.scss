@@ -1,8 +1,8 @@
-@use "../utils/mixins";
-
 body {
-	@include mixins.roboto-family;
-	@include mixins.wrapper;
+	font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .page-section {

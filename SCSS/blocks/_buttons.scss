@@ -1,9 +1,10 @@
 @use "../utils/variables";
 
-.button, .button-dark {
+.button, .button-dark, .button-dark-footer {
 	border-radius: 2px;
 	display: inline-block;
 	cursor: pointer;
+	border: none;
 
 	font-weight: variables.$font-weight-normal;
 	font-size: 14px;
@@ -35,6 +36,16 @@
 
 .button-dark {
 	background-color: variables.$dark-grey;
+	color: variables.$white;
+
+	&:hover {
+		opacity: 90%;
+		// background-color: variables.$selected-grey;
+	}
+}
+
+.button-dark-footer {
+	background-color: variables.$footer-grey;
 	color: variables.$white;
 
 	&:hover {
