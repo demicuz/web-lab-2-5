@@ -66,6 +66,7 @@
 
 .footer__misc-wrapper {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 128px;
 
 	.footer__follow-the-flock {
