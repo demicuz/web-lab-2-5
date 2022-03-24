@@ -243,10 +243,6 @@ body {
   margin: 0 auto;
 }
 
-.section-scrollable-wrapper {
-  padding-left: 24px;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
