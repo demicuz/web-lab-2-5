@@ -64,7 +64,7 @@
 	letter-spacing: 0.3px;
 }
 
-.text-p-footer {	
+.text-label-footer {	
 	font-size: 14px;
 	color: variables.$white;
 	font-weight: variables.$font-weight-normal;
@@ -80,4 +80,13 @@
 	font-style: normal;
 	line-height: 21px;
 	letter-spacing: 2px;
+}
+
+.text-p-footer {
+	font-size: 12px;
+	color: variables.$white;
+	font-weight: variables.$font-weight-normal;
+	font-style: normal;
+	line-height: 18px;
+	letter-spacing: 0.5px;
 }

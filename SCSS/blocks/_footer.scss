@@ -41,11 +41,17 @@
 .footer__link-list {
 	list-style: none;
 	margin: 0;
+
+	li + li {
+		margin-top: 16px;
+	}
 }
 
 .footer__link {
-	padding-bottom: 16px;
+	// padding-bottom: 16px;
 	line-height: 12px;
+	font-size: 12px;
+
 
 	a, span {
 		text-decoration: none;
@@ -56,4 +62,18 @@
 		line-height: 12px;
 		letter-spacing: 0.5px;
 	}
+}
+
+.footer__misc-wrapper {
+	display: flex;
+	gap: 128px;
+
+	.footer__follow-the-flock {
+		width: 333px;
+	}
+}
+
+.footer__social-icons {
+	display: flex;
+	gap: 18px;
 }
