@@ -78,6 +78,15 @@
   letter-spacing: 0.5px;
 }
 
+.text-h2-footer {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: 2px;
+}
+
 .align-center {
   text-align: center;
 }
@@ -124,6 +133,10 @@
 
 .pb-18 {
   padding-bottom: 18px;
+}
+
+.pb-21 {
+  padding-bottom: 21px;
 }
 
 .pb-24 {
@@ -503,6 +516,37 @@ nav.slider-menu label:hover {
   border: none;
   border-bottom: 2px solid #FFFFFF;
   padding-left: 10px;
+}
+
+.footer__links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.footer__links-column {
+  min-width: 250px;
+  max-width: 333px;
+  flex-grow: 1;
+}
+
+.footer__link-list {
+  list-style: none;
+  margin: 0;
+}
+
+.footer__link {
+  padding-bottom: 16px;
+  line-height: 12px;
+}
+.footer__link a, .footer__link span {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.5px;
 }
 
 /*# sourceMappingURL=style.css.map */

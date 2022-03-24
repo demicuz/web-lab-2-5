@@ -26,6 +26,34 @@
 	padding-left: 10px;
 }
 
-.footer__links {
-	
+.footer__links-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 30px;
+}
+
+.footer__links-column {
+	min-width: 250px;
+	max-width: 333px;
+	flex-grow: 1;
+}
+
+.footer__link-list {
+	list-style: none;
+	margin: 0;
+}
+
+.footer__link {
+	padding-bottom: 16px;
+	line-height: 12px;
+
+	a, span {
+		text-decoration: none;
+		color: variables.$white;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: variables.$font-weight-normal;
+		line-height: 12px;
+		letter-spacing: 0.5px;
+	}
 }
