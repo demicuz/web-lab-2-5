@@ -575,6 +575,7 @@ nav.slider-menu label:hover {
 
 .footer__misc-wrapper {
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 128px;
 }
