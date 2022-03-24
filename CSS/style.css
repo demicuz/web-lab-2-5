@@ -586,4 +586,10 @@ nav.slider-menu label:hover {
   gap: 18px;
 }
 
+.footer__flags {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
 /*# sourceMappingURL=style.css.map */
